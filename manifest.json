@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Open Steam Page in App",
+  "version": "1.0.0",
+  "description": "Shows a small button that opens the current Steam page in the Steam client.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://store.steampowered.com/*",
+        "*://steamcommunity.com/*",
+		"*://help.steampowered.com/*",
+		"*://s.team/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

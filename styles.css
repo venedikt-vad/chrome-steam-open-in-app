@@ -1,0 +1,30 @@
+#steam-open-in-app-popup {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  z-index: 999999;
+  background: #171a21;
+  border-radius: 8px;
+  padding: 8px 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+#steam-open-in-app-popup button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  background: #66c0f4;
+  color: #0b141a;
+}
+
+#steam-open-in-app-popup button:hover {
+  filter: brightness(1.05);
+}
+
+#steam-open-in-app-popup button:active {
+  transform: translateY(1px);
+}
